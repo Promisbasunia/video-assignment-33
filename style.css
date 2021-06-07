@@ -1,0 +1,193 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.container-fluid{
+    width: 1200px;
+}
+/* our-primary-manu */
+/* our-primary-manu */
+ul.our-primary-manu {}
+ul.our-primary-manu li{}
+ul.our-primary-manu li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: .5rem .6rem;
+	color: #111111;
+	font-weight: 600;
+	transition: .2s;
+}
+ul.our-primary-manu li a .fa-chevron-down{
+    text-align: center;
+}
+ul.our-primary-manu li a:hover{
+    color: #E83B3E;
+}
+
+/* dropdwon-manu */
+/* dropdwon-manu */
+ul.our-primary-manu li{
+    position: relative;
+}
+ul.our-primary-manu li ul{
+    position: absolute;
+    width: 13.75rem;
+    left: 0;
+    top: 160%;
+    background: #fafafa;
+    list-style: none;
+    padding: .8rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+    z-index: 99;
+}
+ul.our-primary-manu li ul li{
+    flex-direction: column;
+}
+ul.our-primary-manu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+ul.our-primary-manu li ul li a{
+    transition: .5s;
+}
+ul.our-primary-manu li ul li a:hover{
+    color: #E83B3E;
+    letter-spacing: 1px;
+    transform: translateX(5px);
+}
+
+
+
+
+.surch-section {}
+.header-suarch {
+    width: 3.75rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-right: 2px solid #ddd;
+}
+.header-suarch a{
+    display: inline-block;
+    color: #111111;
+}
+.call-section {
+    width: 12.5rem;
+    margin: 0 1rem;
+}
+.header-call-icon {
+    font-size: 2rem;
+    color: #E83B3E;
+    margin-right: 1rem;
+}
+.header-call-info span{
+    color: #606060;
+}
+.header-call-info a{
+    text-decoration: none;
+    color: #111111;
+    font-weight: 600;
+}
+.button-top{
+    text-align: left;
+}
+.button-top a{
+    display: inline-block;
+    padding: .7rem 2rem;
+    transition: .4s;
+    position: relative;
+    z-index: 1;
+}
+.button-top a:hover{
+    border-color: #111111;
+}
+.button-top a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #111111;
+    border-color: #111111 !important;
+    z-index: -1;
+    transition: .4s;
+}
+.button-top a:hover:after{
+    width: 100%;
+}
+
+
+/* slider-section */
+/* slider-section */
+.slider-section {
+    background: url("https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slider-section .slidee-content{
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.slider-section .slidee-content h6{
+    color: #E83B3E;
+}
+.slider-section .slidee-content h1{
+    width: 65%;
+    font-size: 4.25rem;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.slider-section .slidee-content p{
+    width: 55%;
+    color: #606060;
+    font-weight: 400;
+}
+
+
+.social-icon{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.social-icon ul {
+    list-style: none;
+    top: 25rem;
+}
+.social-icon ul li{
+    display: inline-block;
+}
+.social-icon ul li span{
+    display: inline-block;
+    margin-right: 3.125rem;
+    position: relative;
+}
+.social-icon ul li span::after {
+	content: "";
+	height: 1px;
+	background: #111;
+	width: 2.5rem;
+	position: absolute;
+	right: -3rem;
+	top: 50%;
+}
+.social-icon ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 14px;
+    color: #111;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+.social-icon ul li a:hover{
+    color: #E83B3E;
+}
